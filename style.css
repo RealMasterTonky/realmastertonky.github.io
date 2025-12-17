@@ -24,7 +24,7 @@ details:hover {
   cursor: pointer;
 }
 
-details[open=""]:not(summary) {
+details[open=""] *:not(summary) {
   cursor: default;
 }
 
