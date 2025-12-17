@@ -46,6 +46,25 @@ function loadtopbar() {
 
 // format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
 let posts = [
+	["i got a 953 gigabyte hard drive!!!"] = [
+		`<img src="./content/posts/post5/yummers.png"></img>`,
+		`<br>`,
+		`<p>it was quite the war to insert the drive into the pc, but yeah it's done and am happy with it</p>`,
+		`<p>the package claims it's 1 terabyte, but due to computer eating some of the maximum storage capacity for a reason no one knows, it's the oddly specific number mentioned in the post title.</p>`,
+		`<p>but uh yeah cool stuff! now i don't have to worry about running out of space for precious digital rubbish that 95% of all my vids are! :D</p>`,
+		`<details>
+			<summary>extra info for interested readers</summary>
+			<p>i also designed an icon for it! here it is:</p>
+			<br>
+			<img src="./content/posts/post5/hard drive icon.ico"></img>
+			<br>
+			<p>but due to some unknown force preventing me from changing the icon in the explorer window, i decided to use it on a shortcut on my desktop, which looks like this now:</p>
+			<br>
+			<img src="./content/posts/post5/3 hard drives of storing garbage.png"></img>
+			<br>
+			<p>and i love the way it looks!!</p>
+		</details>`,
+	],
 	["MASTERTONKY IN DESMOS GRAPHING CALCULATOR", [
 		`<p>i had this thought of remaking my old pfp in desmos graphing calculator</p>`,
 		`<p>and after 30 funi minutes or so, i got this result</p>`,
@@ -436,6 +455,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
