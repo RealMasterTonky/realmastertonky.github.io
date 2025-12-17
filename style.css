@@ -20,6 +20,10 @@ button:hover {
   background-image: linear-gradient(360deg, #b3b3b3, #CCCCCC);
 }
 
+details:hover {
+  cursor: pointer;
+}
+
 .topbar {
   border-width: 2px;
   background-color: #44444455;
