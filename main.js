@@ -54,15 +54,17 @@ let posts = [
 		`<p>but uh yeah cool stuff! now i don't have to worry about running out of space for precious digital rubbish that 95% of all my vids are! :D</p>`,
 		`<details>
 			<summary>extra info for interested readers</summary>
-			<p>i also designed an icon for it! here it is:</p>
-			<br>
-			<img src="./content/posts/post5/hard drive icon.ico"></img>
-			<br>
-			<p>but due to some unknown force preventing me from changing the icon in the explorer window, i decided to use it on a shortcut on my desktop, which looks like this now:</p>
-			<br>
-			<img src="./content/posts/post5/3 hard drives of storing garbage.png"></img>
-			<br>
-			<p>and i love the way it looks!!</p>
+			<div>
+				<p>i also designed an icon for it! here it is:</p>
+				<br>
+				<img src="./content/posts/post5/hard drive icon.ico"></img>
+				<br>
+				<p>but due to some unknown force preventing me from changing the icon in the explorer window, i decided to use it on a shortcut on my desktop, which looks like this now:</p>
+				<br>
+				<img src="./content/posts/post5/3 hard drives of storing garbage.png"></img>
+				<br>
+				<p>and i love the way it looks!!</p>
+			</div>
 		</details>`,
 		]
 	],
@@ -456,6 +458,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
