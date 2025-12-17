@@ -46,7 +46,7 @@ function loadtopbar() {
 
 // format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
 let posts = [
-	["i got a 953 gigabyte hard drive!!!"] = [
+	["i got a 953 gigabyte hard drive!!!", [
 		`<img src="./content/posts/post5/yummers.png"></img>`,
 		`<br>`,
 		`<p>it was quite the war to insert the drive into the pc, but yeah it's done and am happy with it</p>`,
@@ -64,6 +64,7 @@ let posts = [
 			<br>
 			<p>and i love the way it looks!!</p>
 		</details>`,
+		]
 	],
 	["MASTERTONKY IN DESMOS GRAPHING CALCULATOR", [
 		`<p>i had this thought of remaking my old pfp in desmos graphing calculator</p>`,
@@ -455,6 +456,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
