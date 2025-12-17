@@ -24,6 +24,10 @@ details:hover {
   cursor: pointer;
 }
 
+details[open=""]:not(summary) {
+  cursor: default;
+}
+
 .topbar {
   border-width: 2px;
   background-color: #44444455;
