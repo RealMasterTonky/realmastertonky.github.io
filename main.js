@@ -46,7 +46,7 @@ function loadtopbar() {
     for (let a in topbarbuttons) {
         topbar.innerHTML += `<button id="topbarbutton-${a}" onclick="window.location.href='${topbarbuttons[a]}'"></button>`
 		if(topbarbuttonicons[a] != undefined){
-			document.getElementById(`topbarbutton-${a}`).innerHTML += "[insert icon here]"
+			document.getElementById(`topbarbutton-${a}`).innerHTML += `<img style="width:64px;" src=${topbariconbuttons[a]}></img>`
 		}
 		document.getElementById(`topbarbutton-${a}`).innerHTML += a
     }
@@ -466,6 +466,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
