@@ -8,10 +8,10 @@ let topbarbuttons = {
 
 let topbarbuttonicons = {
 	"home": "./content/icons/home.png",
-	"my posts": "./content/icons/my posts.png",
-	"my artworks": "./content/icons/my artworks.png",
-	"python programs": "./content/icons/python programs.png",
-	"roblox related stuff": "./content/icons/roblox related stuff.png",
+	"my posts": "./content/icons/my_posts.png",
+	"my artworks": "./content/icons/my_artworks.png",
+	"python programs": "./content/icons/python_programs.png",
+	"roblox related stuff": "./content/icons/roblox_related_stuff.png",
 }
 
 function rainbowtext(text) {
@@ -470,6 +470,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
