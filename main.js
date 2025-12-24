@@ -6,6 +6,10 @@ let topbarbuttons = {
     "roblox related stuff": `https://realmastertonky.github.io/roblox`,
 }
 
+let topbarbuttonicons = {
+	"home": "./content/icons/home.png"
+}
+
 function rainbowtext(text) {
 	let output = []
 	let skips = 0
@@ -40,7 +44,11 @@ function loadtopbar() {
     document.body.appendChild(topbar)
 
     for (let a in topbarbuttons) {
-        topbar.innerHTML += `<button onclick="window.location.href='${topbarbuttons[a]}'">${a}</button>`
+        topbar.innerHTML += `<button onclick="window.location.href='${topbarbuttons[a]}'">`
+		if(topbarbuttonicons.find(a) != undefined){
+			topbar.innerHTML += `<img src="${topbarbuttonicons[a]}"></img>`
+		}
+		topbar.innerHTML += `${a}</button>`
     }
 }
 
@@ -458,6 +466,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
