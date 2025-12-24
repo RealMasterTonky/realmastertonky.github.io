@@ -7,7 +7,11 @@ let topbarbuttons = {
 }
 
 let topbarbuttonicons = {
-	"home": "./content/icons/home.png"
+	"home": "./content/icons/home.png",
+	"my posts": "./content/icons/my posts.png"
+	"my artworks": "./content/icons/my artworks.png"
+	"python programs": "./content/icons/python programs.png"
+	"roblox related stuff": "./content/icons/roblox related stuff.png"
 }
 
 function rainbowtext(text) {
@@ -45,10 +49,10 @@ function loadtopbar() {
 
     for (let a in topbarbuttons) {
         topbar.innerHTML += `<button id="topbarbutton-${a}" onclick="window.location.href='${topbarbuttons[a]}'"></button>`
-		// if(topbarbuttonicons[a] != undefined){
-		// 	document.getElementById(`topbarbutton-${a}`).innerHTML += `<img style="width:64px;" src=${topbarbuttonicons[a]}></img>` i'll get all the icons first
-		// }
-		document.getElementById(`topbarbutton-${a}`).innerHTML += a
+		if(topbarbuttonicons[a] != undefined){
+			document.getElementById(`topbarbutton-${a}`).innerHTML += `<img style="width:30px;" src=${topbarbuttonicons[a]}></img>` i'll get all the icons first
+		}
+		document.getElementById(`topbarbutton-${a}`).innerHTML += `<p style="font-size:30px; float:right; margin: 0px;">${a}</p>`
     }
 }
 
@@ -466,6 +470,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
