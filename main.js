@@ -44,11 +44,7 @@ function loadtopbar() {
     document.body.appendChild(topbar)
 
     for (let a in topbarbuttons) {
-        topbar.innerHTML += `<button onclick="window.location.href='${topbarbuttons[a]}'">`
-		if(topbarbuttonicons[a] != undefined){
-			topbar.innerHTML += `<img src="${topbarbuttonicons[a]}"></img>`
-		}
-		topbar.innerHTML += `${a}</button>`
+        topbar.innerHTML += `<button onclick="window.location.href='${topbarbuttons[a]}'">${a}</button>`
     }
 }
 
@@ -466,6 +462,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
