@@ -45,9 +45,9 @@ function loadtopbar() {
 
     for (let a in topbarbuttons) {
         topbar.innerHTML += `<button id="topbarbutton-${a}" onclick="window.location.href='${topbarbuttons[a]}'"></button>`
-		if(topbarbuttonicons[a] != undefined){
-			document.getElementById(`topbarbutton-${a}`).innerHTML += `<img style="width:64px;" src=${topbarbuttonicons[a]}></img>`
-		}
+		// if(topbarbuttonicons[a] != undefined){
+		// 	document.getElementById(`topbarbutton-${a}`).innerHTML += `<img style="width:64px;" src=${topbarbuttonicons[a]}></img>` i'll get all the icons first
+		// }
 		document.getElementById(`topbarbutton-${a}`).innerHTML += a
     }
 }
@@ -466,6 +466,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
