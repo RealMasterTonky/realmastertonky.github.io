@@ -7,11 +7,11 @@ let topbarbuttons = {
 }
 
 let topbarbuttonicons = {
-	"home": "./content/icons/home.png",
-	"my posts": "./content/icons/my_posts.png",
-	"my artworks": "./content/icons/my_artworks.png",
-	"python programs": "./content/icons/python_programs.png",
-	"roblox related stuff": "./content/icons/roblox_related_stuff.png",
+	"home": "content/icons/home.png",
+	"my posts": "content/icons/my_posts.png",
+	"my artworks": "content/icons/my_artworks.png",
+	"python programs": "content/icons/python_programs.png",
+	"roblox related stuff": "content/icons/roblox_related_stuff.png",
 }
 
 function rainbowtext(text) {
@@ -47,10 +47,14 @@ function loadtopbar() {
     topbar.className = "topbar"
     document.body.appendChild(topbar)
 
+	let depth = document.URL.split('/').length-4
+    let thatthing = "../"
+    if(depth === 0){thatthing=""}else{if(depth>1){thatthing.repeat(depth)}}
+
     for (let a in topbarbuttons) {
         topbar.innerHTML += `<button id="topbarbutton-${a}" onclick="window.location.href='${topbarbuttons[a]}'"></button>`
 		if(topbarbuttonicons[a] != undefined){
-			document.getElementById(`topbarbutton-${a}`).innerHTML += `<img style="width:30px;" src=${topbarbuttonicons[a]}></img>`
+			document.getElementById(`topbarbutton-${a}`).innerHTML += `<img style="width:30px;" src=${thatthing}${topbarbuttonicons[a]}></img>`
 		}
 		document.getElementById(`topbarbutton-${a}`).innerHTML += `<p style="font-size:30px; float:right; margin: 0px;">${a}</p>`
     }
@@ -470,6 +474,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
