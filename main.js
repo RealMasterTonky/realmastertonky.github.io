@@ -62,6 +62,20 @@ function loadtopbar() {
 
 // format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
 let posts = [
+	["thoughts about 2025", [
+		`<p>as the year gone into nothing with 2026 stepping in, the "I SHOWERED LAST YEAR!!" joke comes up again.</p>`,
+		`<br>`
+		`<p>ok anyways, the year was one of the worst ones i'd say</p>`,
+		`<p>"why?" u might ask, so here's some of the things that happened during 2025:</p>`,
+		`<p>- i broke my knee.</p>`,
+		`<p>- 9th grade in school which is making me lazy & crazy (i also wanted to mention the loneliness there, but i accept it recently)</p>`,
+		`<p>- active roblox enshittification, which also resulted in roblox being banned in the country i live in</p>`,
+		`<p>- more ai.</p>`,
+		`<br>`
+		`<p>that's p much all i can say</p>`,
+		`<p>with 75% confidence, i'd say that 2026 will be a better year!</p>`,
+		]
+	],
 	["i got a 953 gigabyte hard drive!!!", [
 		`<img src="./content/posts/post5/yummers.png"></img>`,
 		`<br>`,
@@ -474,6 +488,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
