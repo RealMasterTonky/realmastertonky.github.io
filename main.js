@@ -440,6 +440,7 @@ let pages = {
             "pit of misery.png",
             "ToHH completion vid thumbnail (no text).png",
             "my friend's dream.png",
+			"the polygonal thing.png",
         ]
 
         let gallery = document.createElement("div")
@@ -488,6 +489,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
