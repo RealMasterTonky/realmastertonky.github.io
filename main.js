@@ -171,6 +171,31 @@ let pages = {
         document.body.innerHTML += "<p>welcome to my website! for now it's about showing my things & creations</p>"
         document.body.innerHTML += "<p>so yeah, feel free to explore things here</p>"
 
+		document.body.innerHTML += `<p style="font-size:34px">about me</p>`
+		let details1 = document.createElement('details')
+		details1.innerHTML += "<summary>what games do i play</summary>"
+		let details1div = document.createElement('div')
+		details1div.innerHTML += "<p>geometry dash, terraria (vanilla & modded), minecraft (rarely)</p>"
+		details1div.innerHTML += "<p>that's pretty much all. very fun ik</p>"
+		details1.appendChild(details1div)
+        document.body.appendChild(details1)
+
+		let details2 = document.createElement('details')
+		details2.innerHTML += "<summary>what languages do i speak</summary>"
+		let details2div = document.createElement('div')
+		details2div.innerHTML += "<p>russian & english.</p>"
+		details2div.innerHTML += "<p>used to speak ukrainian around 2014, but i completely forgor the language</p>"
+		details2.appendChild(details2div)
+        document.body.appendChild(details2)
+
+		let details3 = document.createElement('details')
+		details3.innerHTML += "<summary>do i swear</summary>"
+		let details3div = document.createElement('div')
+		details3div.innerHTML += "<p>...yup, not in russian tho</p>"
+		details3.appendChild(details3div)
+        document.body.appendChild(details3)
+		
+
         document.body.innerHTML += `<p style="font-size:34px">recent posts</p>`
         let recentposts = document.createElement('div')
         recentposts.className = "MyPosts"
@@ -489,6 +514,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
