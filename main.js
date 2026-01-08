@@ -184,7 +184,7 @@ let pages = {
 		details2.innerHTML += "<summary>what languages do i speak</summary>"
 		let details2div = document.createElement('div')
 		details2div.innerHTML += "<p>russian & english.</p>"
-		details2div.innerHTML += "<p>used to speak ukrainian around 2014, but i completely forgor the language</p>"
+		details2div.innerHTML += "<p>used to speak ukrainian around 2015-2017 or so, but i completely forgor the language</p>"
 		details2.appendChild(details2div)
         document.body.appendChild(details2)
 
@@ -516,6 +516,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
