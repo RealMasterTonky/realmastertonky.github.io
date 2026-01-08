@@ -191,7 +191,9 @@ let pages = {
 		let details3 = document.createElement('details')
 		details3.innerHTML += "<summary>do i swear</summary>"
 		let details3div = document.createElement('div')
-		details3div.innerHTML += "<p>...yup, not in russian tho</p>"
+		details3div.innerHTML += "<p>...yup.</p>"
+		details3div.innerHTML += "<p>in english i swear quite often whenever i feel comfortable</p>"
+		details3div.innerHTML += "<p>in russian however, i swear only when things get serious</p>"
 		details3.appendChild(details3div)
         document.body.appendChild(details3)
 		
@@ -514,6 +516,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
