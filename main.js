@@ -196,6 +196,15 @@ let pages = {
 		details3div.innerHTML += "<p>in russian however, i swear only when things get serious</p>"
 		details3.appendChild(details3div)
         document.body.appendChild(details3)
+
+		let details4 = document.createElement('details')
+		details4.innerHTML += "<summary>why do i speak like this</summary>"
+		let details4div = document.createElement('div')
+		details4div.innerHTML += "<p>i mean, why not?</p>"
+		details4div.innerHTML += "<p>i think language is about conveying meaning to the listener/reader</p>"
+		details4div.innerHTML += "<p>and i think the reason grammar exists is to make the conveying somewhat prettier</p>"
+		details4.appendChild(details4div)
+        document.body.appendChild(details4)
 		
 
         document.body.innerHTML += `<p style="font-size:34px">recent posts</p>`
@@ -516,6 +525,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
