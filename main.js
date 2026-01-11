@@ -397,7 +397,7 @@ let pages = {
 		document.body.innerHTML += `<p>this page contains all dreams i REMEMBER.</p>`
 		document.body.innerHTML += `<p>some older dreams might be inaccurate & very tiny due to me not remembering much</p>`
 
-		document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p style="font-size:30px">! VERY unfinished page !</p><p>due to gigantic amount of writing i'll have to commit, the content here will be very limited for now.</p></div>`
+		document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p style="font-size:30px">! VERY unfinished page !</p><p>as you can see, there's nothing here. that'll change in the near future</p></div>`
 		// format - {date of the dream happening/dream title (string), the content of the dream (in html), category ("201?", "202?", "2025", "2026")}
 		let dreams = [
 			["test", `<p>${rainbowtext("this a test, not a dream")}</p>`, "201?"],
@@ -570,6 +570,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
