@@ -398,8 +398,44 @@ let pages = {
 		document.body.innerHTML += `<p>some older dreams might be inaccurate & very tiny due to me not remembering much</p>`
 
 		document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p style="font-size:30px">! VERY unfinished page !</p><p>due to gigantic amount of writing i'll have to commit, the content here will be very limited for now.</p></div>`
+		// format - {date of the dream happening/dream title (string), the content of the dream (in html), category ("201?", "202?", "2025", "2026")}
+		let dreams = [
+			{"test", `<p>${rainbowtext("this no dream, this a test")}</p>`, "201?"}
+		]
 
+		let dreams201X = document.createElement('div')
+		dreams2026.id = "201?"
+		dreams201X.innerHTML += `<p style="font-size: 30px">201?</p>`
+        document.body.appendChild(dreams201X)
+
+		let dreams202X = document.createElement('div')
+		dreams2026.id = "202?"
+		dreams202X.innerHTML += `<p style="font-size: 30px">202?</p>`
+        document.body.appendChild(dreams202X)
+
+		let dreams2025 = document.createElement('div')
+		dreams2025.id = "2025"
+		dreams2025.innerHTML += `<p style="font-size: 30px">2025</p>`
+        document.body.appendChild(dreams2025)
 		
+		let dreams2026 = document.createElement('div')
+		dreams2026.id = "2026"
+		dreams2026.innerHTML += `<p style="font-size: 30px">2026</p>`
+        document.body.appendChild(dreams2026)
+
+		for(dream in dreams) {
+			let dreamtitle = dream[0]
+			let dreamcontent = dream[1]
+			let dreamcategory = dream[2]
+
+			let dreamhtml = document.createElement('details')
+			dreamhtml.innerHTML += `<summary style="font-size:20px">${dreamtitle}</summary>`
+			let dreamhtmldiv = document.createElement('div')
+			dreamhtml.appendChild(dreamhtmldiv)
+			dreamhtmldiv.innerHTML += dreamcontent
+
+			document.getElementById(dreamcategory).appendChild(dreamhtml)
+		}
     },
     "https://realmastertonky.github.io/artworks": function() {
         document.body.innerHTML += "<h1>my artworks</h1>"
@@ -534,6 +570,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
