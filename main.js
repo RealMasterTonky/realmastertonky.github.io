@@ -392,6 +392,15 @@ let pages = {
             document.body.innerHTML += `<p style="color:rgb(${colors[0]},${colors[1]},${colors[2]})">${tower} - ${towerstats[0]} - ${towerstats[1]} <button onclick="window.open('${towerstats[3]}')">check (${playable})</button></p>`
         }
     },
+	"https://realmastertonky.github.io/dreamarchive": function() {
+        document.body.innerHTML += "<h1>the dream archive</h1>"
+		document.body.innerHTML += `<p>this page contains all dreams i REMEMBER.</p>`
+		document.body.innerHTML += `<p>some older dreams might be inaccurate & very tiny due to me not remembering much</p>`
+
+		document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p style="font-size:30px">! VERY unfinished page !</p><p>due to gigantic amount of writing i'll have to commit, the content here will be very limited for now.</p></div>`
+
+		
+    },
     "https://realmastertonky.github.io/artworks": function() {
         document.body.innerHTML += "<h1>my artworks</h1>"
         document.body.innerHTML += `<button style="font-size:30px" onclick="window.location.href='https://realmastertonky.github.io/artworks/atrocities'">atrocities</button><br>low quality caricatures that i drew for laughs and coughs<br><br>`
@@ -525,6 +534,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
