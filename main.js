@@ -434,6 +434,31 @@ let pages = {
 			 	<p>the time was something like 20:30. me was thinking smth like "damn that's quite late", so instead of going home like everyone else did,</p>
 			 	<p>i just standed in the room for few seconds, and then woke up.</p>`,
 			"2026"],
+			["dream 10.01.2026", 
+				`<p>i was in some sorta healthcare building, laying on a table-like board with 4 wheels.</p>
+				<p>me got sent to an operation room, where there were 2 doctors, each with their computers</p>
+			 	<p>i just waited and hoped that there would be no injections, but one of my friends came in, got injected with smth, walked out (he didn't say hello or anything)</p>
+				<p>after i saw that, i asked "do i need to get injected?"</p>
+				<p>one of the doctors responded smth like "yeah? why wouldn't you?"</p>
+				<p>i thought smth like "uh oh"</p>
+				<p>but then i forgor wat happened afterwards. after assuming i got the injection, i was going from the above mentioned place to a restaurant, still on the damn board</p>
+				<p>this time, my dad was with me. once we got to the restaurant, he entered first, and i asked smth like "uhh, how do i go through door?"</p>
+				<p>he responded with "just hold the board behind you."</p>
+				<p>i just stood up, grabbed the board, put it behind my back, and entered the restaurant. that somehow worked for sum unknown reason...</p>
+				<p>after that, i put down the board, and laid on it again.</p>
+				<p>my dad took a table, but while that was happening, i saw 3 of my dad's friends sitting near another table</p>
+				<p>i met them with handshakes, and then proceeded to move the board to my table (no idea how)</p>
+				<p>i forgor wat happened after that, but i was outside again...</p>
+				<p>i went to the restaurant again. (pretty sure i wasn't on that cursed board anymore)</p>
+				<p>then i went to a female cashier and asked smth like "is there my order on my table?"</p>
+				<p>she responded with "no, we got your order with us so no one would eat it while you're away."</p>
+				<p>and then she gave me the small fries.</p>
+				<p>i got the order, went to my table, and didn't eat the fries for sum reason</p>
+				<p>and then my dad came; a waiter gave him chicken nuggets and 50$.</p>
+				<p>he just sat there confused, and then, seemingly outta nowhere, i knew wat to do</p>
+				<p>i checked my phone, opened up ROBLOX CHICKEN NUGGET'S ITEM SOURCE CODE, and showed my dad that the code had if statements that would give u bonuses</p>
+				<p>it made sense for him, then i woke up.</p>`,
+			"2026"],
 		]
 
 		let dreams201X = document.createElement('div')
@@ -605,6 +630,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
