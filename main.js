@@ -401,6 +401,7 @@ let pages = {
 		// format - {date of the dream happening/dream title (string), the content of the dream (in html), category ("201?", "202?", "2025", "2026")}
 		let dreams = [
 			["test", `<p>${rainbowtext("this a test, not a dream! oh btw check out this near-unreadable rainbow text i made for a reason i completely fogror")}</p>`, "201?"],
+			["ANOTHER test", `<p>this ANOTHER test, not a dream! oh also no rainbow text for u because haha lol</p>`, "2025"],
 		]
 
 		let dreams201X = document.createElement('div')
@@ -571,6 +572,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
