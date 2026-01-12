@@ -394,10 +394,10 @@ let pages = {
     },
 	"https://realmastertonky.github.io/dreamarchive": function() {
         document.body.innerHTML += "<h1>the dream archive</h1>"
-		document.body.innerHTML += `<p>this page contains all dreams i REMEMBER.</p>`
+		document.body.innerHTML += `<p>this page contains all dreams i remember.</p>`
 		document.body.innerHTML += `<p>some older dreams might be inaccurate & very tiny due to me not remembering much</p>`
 
-		document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p style="font-size:30px">! VERY unfinished page !</p><p>as you can see, there's nothing here. that'll change in the near future</p></div>`
+		document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p style="font-size:30px">! VERY unfinished page !</p><p>as you can see, there's barely anything here. that'll change in the near future</p></div>`
 		// format - {date of the dream happening/dream title (string), the content of the dream (in html), category ("201?", "202?", "2025", "2026")}
 		// ok the structuring got terrible real quick
 		let dreams = [
@@ -605,6 +605,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
