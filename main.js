@@ -399,9 +399,41 @@ let pages = {
 
 		document.body.innerHTML += `<div style="background-color:rgba(255,255,0,0.2)"><p style="font-size:30px">! VERY unfinished page !</p><p>as you can see, there's nothing here. that'll change in the near future</p></div>`
 		// format - {date of the dream happening/dream title (string), the content of the dream (in html), category ("201?", "202?", "2025", "2026")}
+		// ok the structuring got terrible real quick
 		let dreams = [
-			["test", `<p>${rainbowtext("this a test, not a dream! oh btw check out this near-unreadable rainbow text i made for a reason i completely fogror")}</p>`, "201?"],
-			["ANOTHER test", `<p>this ANOTHER test, not a dream! oh also no rainbow text for u because haha lol</p>`, "2025"],
+			["oldest dream", 
+				`<p>the dream began with me playing tanki online</p>`,
+				`<p>and after me opened up the server list, for some reason the monitor became gigantic & i was positioned near the table, making me see the screen from the side</p>`,
+			 	`<p>some sorta loud sound started playing, which terrified me, so as any other kid would, i started screaming</p>`,
+			 	`<p>that didn't help at all & the theme of the menu became blue as the sound increasingly gets louder and louder</p>`,
+			 	`<p>after some time of that, i woke up screaming at the wall behind the bed.</p>`,
+			"201?"],
+			["dream 09.01.2026", 
+				`<p>i was near my crib with my sister's 2 children; it was snowing outside</p>`,
+				`<p>after something major that i don't remember happened, i was at school, history classroom; it was dark outside, couldn't see anything outta the window</p>`,
+			 	`<p>after something not major that i also don't remember happened, i was near the supposed biology classroom</p>`,
+			 	`<p>however, when i entered the door that usually leads to the above mentioned classroom, i was met with a very familiar room with 2 tvs</p>`,
+			 	`<p>one tv is on the wall, the other is on a drawer (that'll be important later); the tvs were off.</p>`,
+			 	`<p>in the hallway, my classmates that were there decided to play "team fortress 2", so i decided to join in</p>`,
+			 	`<p>the battle was quite chaotic (i don't really remember how tho) until this one part where my team was near the door which i mentioned above</p>`,
+			 	`<p>the other team meanwhile was hiding on a section of the hallway; they just so happened to capture a friend i have, that was also my teammate; the enemy team was now holding him captive.</p>`,
+			 	`<p>so while my team was seemingly planning on how to raid the enemy team, i thought of a slightly dangerous idea</p>`,
+			 	`<p>i got a grenade that releases flammable gas & a green landmine that ignites the gas</p>`,
+			 	`<p>so after my team got ready, they started raiding the enemy team; i ran too, and then threw the 2 above mentioned explosives</p>`,
+			 	`<p>the enemy team ran outta the spot, the friend at first cheered!</p>`,
+			 	`<p>...then started panicking from realization of wat was happening.</p>`,
+			 	`<p>when backing off, i saw one of my other teammates grab one of the chair's legs, dragging the chair and friend outta the spot</p>`,
+			 	`<p>they gotten out, and the 2 explosives exploded. gladly, no one was hurt!</p>`,
+			 	`<p>everyone decided that they had enough of the game (no one seemed to really mind me with the explosive idea)</p>`,
+			 	`<p>for sum reason, they went to the other end of hallway, due to one of my former classmates going somewhere</p>`,
+			 	`<p>i didn't go with them; i went to the familiar room, and then i saw the wall tv broadcasting something like:</p>`,
+			 	`<p>"for the very powerful explosive, u need 1 secret ingredient: yunium."</p>`,
+			 	`<p style="color:rgba(0,0,0,0.4)">(for context, yunium is an ore from a roblox game called "Azure Mines")</p>`,
+			 	`<p>after that, the tv broadcasted channels like normal, but the "yunium" kept repeating and repeating from the tv speakers.</p>`,
+			 	`<p>then i saw that it looks like it's dark outside, so i decided to check my phone that was located near the tv that was on the drawer</p>`,
+			 	`<p>the time was something like 20:30. me was thinking smth like "damn that's quite late", so instead of going home like everyone else did,</p>`,
+			 	`<p>i just standed in the room for few seconds, and then woke up.</p>`,
+			"2026"],
 		]
 
 		let dreams201X = document.createElement('div')
@@ -572,6 +604,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
