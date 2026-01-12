@@ -424,9 +424,10 @@ let pages = {
         document.body.appendChild(dreams2026)
 
 		for(dream in dreams) {
-			let dreamtitle = dream[0]
-			let dreamcontent = dream[1]
-			let dreamcategory = dream[2]
+			let dreamdata = dreams[dream]
+			let dreamtitle = dreamdata[0]
+			let dreamcontent = dreamdata[1]
+			let dreamcategory = dreamdata[2]
 
 			let dreamhtml = document.createElement('details')
 			dreamhtml.innerHTML += `<summary style="font-size:20px">${dreamtitle}</summary>`
@@ -434,11 +435,6 @@ let pages = {
 			dreamhtml.appendChild(dreamhtmldiv)
 			dreamhtmldiv.innerHTML += dreamcontent
 
-			console.log(dream)
-			console.log(dreamtitle)
-			console.log(dreamcontent)
-			console.log(dreamcategory)
-			console.log(document.getElementById(dreamcategory))
 			document.getElementById(dreamcategory).appendChild(dreamhtml)
 		}
     },
@@ -575,6 +571,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
