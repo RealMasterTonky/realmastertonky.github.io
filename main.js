@@ -434,6 +434,8 @@ let pages = {
 			dreamhtml.appendChild(dreamhtmldiv)
 			dreamhtmldiv.innerHTML += dreamcontent
 
+			console.log(dreamcategory)
+			console.log(document.getElementById(dreamcategory))
 			document.getElementById(dreamcategory).appendChild(dreamhtml)
 		}
     },
@@ -570,6 +572,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
