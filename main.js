@@ -404,12 +404,12 @@ let pages = {
 		]
 
 		let dreams201X = document.createElement('div')
-		dreams2026.id = "201?"
+		dreams201X.id = "201?"
 		dreams201X.innerHTML += `<p style="font-size: 30px">201?</p>`
         document.body.appendChild(dreams201X)
 
 		let dreams202X = document.createElement('div')
-		dreams2026.id = "202?"
+		dreams202X.id = "202?"
 		dreams202X.innerHTML += `<p style="font-size: 30px">202?</p>`
         document.body.appendChild(dreams202X)
 
@@ -570,6 +570,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
