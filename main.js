@@ -62,6 +62,18 @@ function loadtopbar() {
 
 // format: ["title", ["<p>paragraph 1</p>", "<img>insert image here</img>"]]
 let posts = [
+	["...so about roblox", [
+		`<p>well, i got a russian blocking bypass that i won't state here, which means i can play roblox again!</p>`,
+		`<p>except i won't be playing it as much & i won't be developing on it anymore.</p>`,
+		`<p>"why?" u might ask, so here are the reasons:</p>`,
+		`<p>1. games dry</p>`,
+		`<p>2. the company behind it... isn't good</p>`,
+		`<p>3. currently trying to make a game on godot</p>`,
+		`<p>4. chat went bye bye because age verification.</p>`,
+		`<p>so uh yeah that means i won't be making the 2 roblox projects, which are Tonk Madness, and MasterTonky's Towering Tomfoolery</p>`,
+		`<p>thx for the memories, or sorry for the wasted time if ur gonna put it that way</p>`,
+		]
+	],
 	["thoughts about 2025", [
 		`<p>as the year gone into nothing with 2026 stepping in, the "I SHOWERED LAST YEAR!!" joke comes up again.</p>`,
 		`<br>`,
@@ -630,6 +642,7 @@ function loadpage() {
 document.addEventListener("DOMContentLoaded", function() {
     loadpage()
 })
+
 
 
 
